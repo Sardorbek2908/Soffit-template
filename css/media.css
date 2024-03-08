@@ -78,5 +78,13 @@
     .quiz-input {
         width: 343px;
     }
+    .site-nav__menu {
+        display: none;
+    }
+    .btn {
+        display: inline;
+    }
+  
+
 }
 @media (max-width: 320px) {}

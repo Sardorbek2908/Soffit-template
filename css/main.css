@@ -165,6 +165,10 @@ li {
     border: 1px solid white;
     margin-bottom: 100px;
 }
+.card:hover {
+/* background-image:  linear-gradient(circle, );  */
+background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff, #00ffff, #00ff00);
+}
 
 .card-title {
     color: var(--white);
