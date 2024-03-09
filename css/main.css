@@ -179,6 +179,9 @@ li {
     column-gap: 80px;
 }
 .gallery-img {
+    border-radius: 21px;
+    border: 1px solid --white;
+    background: url(<path-to-image>), lightgray -218px -226.383px / 117.581% 220.738% no-repeat;
     margin-bottom: 60px;
 }
 .aboutus-section {

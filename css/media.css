@@ -84,6 +84,13 @@
     .btn {
         display: inline;
     }
+    .gallery-img {
+        width: 340px;
+        height: 190px;
+        border-radius: 21px;
+        border: 1px solid --white;
+        background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    }
   
 
 }
