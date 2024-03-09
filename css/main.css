@@ -98,7 +98,13 @@ li {
     color: var(--white);
     opacity: 1;
 }
-
+.site-header__title {
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 51px;
+}
 
 .site-header__hero {
     background: url(../img/Rectangle\ \(1\).png) no-repeat center center/ cover;
@@ -119,6 +125,17 @@ li {
 .site-hero__text {
     width: 1021px;
     color: #FFF;
+    font-family: "Manrope";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.site-about-text {
+    width: 1060px;
+    margin-bottom: 66px;
+}
+.text-color {
+    color: #0040DD;
     font-family: "Manrope";
     font-size: 22px;
     font-weight: 700;
@@ -157,6 +174,17 @@ li {
     justify-content: center;
     overflow-x: auto;
 }
+/* about us */
+.aboutus-img {
+    column-gap: 80px;
+}
+.gallery-img {
+    margin-bottom: 60px;
+}
+.aboutus-section {
+    margin-bottom: 110px;
+}
+/* about us */
 
 .card {
     width: 406px;
