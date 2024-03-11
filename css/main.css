@@ -78,10 +78,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 75px;
+    border: 1px solid #FFF;
     column-gap: 10px;
     width: 99px;
     height: 35px;
-    border-radius: 50%;
     opacity: 0.6;
 }
 
