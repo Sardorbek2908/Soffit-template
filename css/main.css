@@ -98,6 +98,18 @@ li {
     color: var(--white);
     opacity: 1;
 }
+.hero__container {
+    position: relative;
+}
+.hero__btn {
+    position: absolute;
+    bottom: -21px;
+}
+.site-hero__btn {
+    position: absolute;
+    left: 187px;
+    bottom: -21px;
+}
 .site-header__title {
     color: var(--white);
     font-family: "Manrope";
@@ -108,6 +120,17 @@ li {
 
 .site-header__hero {
     background: url(../img/Rectangle\ \(1\).png) no-repeat center center/ cover;
+}
+
+.site-hero__btn {
+    color: #000;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 1px solid #FFF;
+    background: #FFF;
 }
 
 .site-hero__img {
@@ -130,23 +153,18 @@ li {
     font-weight: 700;
     line-height: 44px;
 }
+
 .site-about-text {
     width: 1060px;
     margin-bottom: 66px;
 }
+
 .text-color {
     color: #0040DD;
     font-family: "Manrope";
     font-size: 22px;
     font-weight: 700;
     line-height: 44px;
-}
-
-.site-hero-btn {
-    color: var(--white);
-    font-family: "Manrope";
-    font-size: 16px;
-    font-weight: 600;
 }
 
 /* MAIN START */
@@ -156,7 +174,6 @@ li {
 }
 
 .sevices-section {
-    padding-top: 100px;
     background: url(../img/Rectangle\ \(1\).png) no-repeat center center/ cover;
 
 }
@@ -170,23 +187,29 @@ li {
 }
 
 .sevices-card {
+    width: 1470px;
+    margin: auto;
     display: flex;
     justify-content: center;
     overflow-x: auto;
 }
+
 /* about us */
 .aboutus-img {
     column-gap: 80px;
 }
+
 .gallery-img {
     border-radius: 21px;
     border: 1px solid --white;
     background: url(<path-to-image>), lightgray -218px -226.383px / 117.581% 220.738% no-repeat;
     margin-bottom: 60px;
 }
+
 .aboutus-section {
-    margin-bottom: 110px;
+    margin-bottom: 30px;
 }
+
 /* about us */
 
 .card {
@@ -196,9 +219,10 @@ li {
     border: 1px solid white;
     margin-bottom: 100px;
 }
+
 .card:hover {
-/* background-image:  linear-gradient(circle, );  */
-background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff, #00ffff, #00ff00);
+    background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff,
+     #00ffff, #00ff00);
 }
 
 .card-title {
@@ -212,12 +236,14 @@ background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff
 
 .card-text {
     width: 305px;
-    margin-top: 132px;
+    max-height: 112px;
+    height: 112px;
     color: var(--white);
     font-family: "Manrope";
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
+    margin-top: 132px;
 }
 
 .site-main-btn {
@@ -232,7 +258,7 @@ background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff
     font-family: "Manrope";
     font-size: 16px;
     font-weight: 600;
-    margin-top: 131px;
+    margin-top: 103px;
 }
 
 .portfolio-section {
@@ -323,6 +349,7 @@ footer {
     align-items: center;
     gap: 5px;
 }
+
 .footer-text {
     color: var(--white);
     font-family: "Manrope";
@@ -330,6 +357,7 @@ footer {
     font-weight: 500;
     margin-bottom: 70px;
 }
+
 .footer-menu {
     display: flex;
     column-gap: 70px;
