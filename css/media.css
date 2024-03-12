@@ -6,64 +6,36 @@
 
 /* descktop */
 @media (max-width: 1440px) {}
+
 @media (max-width: 1320px) {}
+
 @media (max-width: 1290px) {}
+
 @media (max-width: 1170px) {}
+
 @media (max-width: 1140px) {}
+
 @media (max-width: 1024px) {}
 
 /* Tab */
 @media (max-width: 992px) {}
+
 @media (max-width: 850px) {}
+
 /* Mobile */
 @media (max-width: 768px) {}
+
 @media (max-width: 684px) {}
+
 /* mobile < 576 */
 @media (max-width: 576px) {
-    .container {
-        max-width: 555px;
-        width: 100%;
-        margin: auto;
-    }
-    .site-hero__text {
-        width: 335px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 26px;
-    }
-
-    .section-title {
-        font-size: 35px;
-        font-weight: 700;
-    }
-    .portifolio-img {
-        width: 343px;
-        height: 182px;
-    }
-    .info-text {
-        width: 349px;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 26px;
-    }
-    .quiz-input {
-        width: 343px;
-    }
-}
-@media (max-width: 480px) {}
-@media (max-width: 412px) {}
-@media (max-width: 375px) {
-    .container {
-        max-width: 335px;
-        width: 100%;
-        margin: auto;
-    }
     .nav-menu {
         width: 40px;
         height: 40px;
         display: flex;
         align-items: center;
     }
+
     .nav-menu__line {
         width: 100%;
         height: 2px;
@@ -72,6 +44,7 @@
         position: relative;
         transition: .3s;
     }
+
     .nav-menu__line::before {
         content: "";
         display: block;
@@ -83,6 +56,7 @@
         position: relative;
         transition: .4s;
     }
+
     .nav-menu__line::after {
         content: "";
         display: block;
@@ -94,17 +68,126 @@
         transition: .4s;
     }
 
-    .nav-menu:hover .nav-menu__line::before{
+    .nav-menu:hover .nav-menu__line::before {
         transform: rotate(45deg);
         top: 0;
     }
-    .nav-menu:hover .nav-menu__line::after{
+
+    .nav-menu:hover .nav-menu__line::after {
         transform: rotate(-45deg);
         top: 0;
     }
+
     .nav-menu:hover .nav-menu__line {
         background-color: transparent;
     }
+
+    .site-header {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .container {
+        max-width: 555px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .site-hero__text {
+        width: 335px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .section-title {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .portifolio-img {
+        width: 343px;
+        height: 182px;
+    }
+
+    .info-text {
+        width: 349px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+
+    .quiz-input {
+        width: 343px;
+    }
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 412px) {}
+
+@media (max-width: 375px) {
+    .container {
+        max-width: 335px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .nav-menu {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-menu__line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: relative;
+        transition: .3s;
+    }
+
+    .nav-menu__line::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: -10px;
+        position: relative;
+        transition: .4s;
+    }
+
+    .nav-menu__line::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        transition: .4s;
+    }
+
+    .nav-menu:hover .nav-menu__line::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-menu:hover .nav-menu__line::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .nav-menu:hover .nav-menu__line {
+        background-color: transparent;
+    }
+
     .nav {
         position: fixed;
         flex-direction: column;
@@ -119,6 +202,7 @@
         transform: scale(0);
         transition: .5s;
     }
+
     .site-hero__text {
         width: 335px;
         font-size: 16px;
@@ -130,21 +214,25 @@
         font-size: 35px;
         font-weight: 700;
     }
+
     .portifolio-image {
         width: 343px;
         height: 182px;
     }
+
     .portfolio-desc {
         padding: 5px 10px;
         column-gap: 50px;
-        border-radius: 21px; 
+        border-radius: 21px;
     }
+
     .portfolio-dec__text {
         max-width: 200px;
         width: 100%;
         font-size: 10px;
         font-weight: 300;
     }
+
     .portfolio-btn {
         display: inline-flex;
         padding: 7px 7px;
@@ -156,18 +244,26 @@
         font-weight: 400;
         width: 190px;
     }
+
+    .nav-menu:hover~.nav {
+        transform: scale(1);
+    }
+
     .info-text {
         width: 349px;
         font-size: 16px;
         font-weight: 600;
         line-height: 26px;
     }
+
     .site-nav__menu {
         display: none;
     }
+
     .btn {
         display: inline;
     }
+
     .gallery-img {
         width: 340px;
         height: 190px;
@@ -175,9 +271,17 @@
         border: 1px solid --white;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
-    .quiz-input {
-        width: 343px;
+    .footer-container {
+        flex-direction: column;
+        gap: 60px;
     }
 
+    .footer-menu {
+        flex-wrap: wrap;
+        gap: 60px;
+        order: -1 !important;
+
+    }
 }
+
 @media (max-width: 320px) {}

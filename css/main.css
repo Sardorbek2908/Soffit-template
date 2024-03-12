@@ -66,7 +66,9 @@ body {
     column-gap: 50px;
     align-items: center;
 }
-
+.nav {
+    display: flex;
+}
 .site-list {
     display: flex;
     column-gap: 35px;
@@ -373,9 +375,10 @@ body {
     margin-top: 15px;
     margin-bottom: 100px;
 }
-
+/* footer */
 footer {
     background-color: var(--dark);
+    padding-bottom: 70px;
 }
 
 .line {
@@ -395,7 +398,7 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .quiz-input {
@@ -411,25 +414,18 @@ footer {
     font-weight: 600;
 }
 
-.info-btn {
-    display: inline-flex;
-    padding: 10px 15px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
 .footer-text {
     color: var(--white);
     font-family: "Manrope";
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 70px;
+    margin-top: 52px;
 }
 
 .footer-menu {
     display: flex;
     column-gap: 70px;
+    order: 1;
 }
 
 .footer-item {
@@ -448,16 +444,7 @@ footer {
 }
 
 .footer-link {
-    width: 88px;
-    color: var(--white);
-    font-family: "Manrope";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-}
-
-.footer-link__contac {
-    width: 171px;
+    max-width: 171px;
     color: var(--white);
     font-family: "Manrope";
     font-size: 16px;
