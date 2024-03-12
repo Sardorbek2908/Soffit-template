@@ -136,23 +136,31 @@
     }
     .portfolio-desc {
         padding: 5px 10px;
-        column-gap: 60px;
+        column-gap: 50px;
         border-radius: 21px; 
     }
     .portfolio-dec__text {
         max-width: 200px;
         width: 100%;
         font-size: 10px;
+        font-weight: 300;
+    }
+    .portfolio-btn {
+        display: inline-flex;
+        padding: 7px 7px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        border-radius: 50px;
+        font-size: 10px;
         font-weight: 400;
+        width: 190px;
     }
     .info-text {
         width: 349px;
         font-size: 16px;
         font-weight: 600;
         line-height: 26px;
-    }
-    .quiz-input {
-        width: 343px;
     }
     .site-nav__menu {
         display: none;
@@ -167,7 +175,9 @@
         border: 1px solid --white;
         background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     }
-  
+    .quiz-input {
+        width: 343px;
+    }
 
 }
 @media (max-width: 320px) {}
