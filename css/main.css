@@ -19,7 +19,9 @@ li {
     --white: #FFF;
     --blue: #0040DD;
 }
-
+body {
+    background-color: #000;
+}
 .all-btn {
     display: inline-flex;
     padding: 10px 15px;
@@ -53,6 +55,12 @@ li {
     padding-bottom: 85px;
 }
 
+.site-header-nav {
+    background: var(--dark-blue);
+    width: 100%;
+    height: 100px;
+}
+
 .site-nav__menu {
     display: flex;
     column-gap: 50px;
@@ -65,6 +73,7 @@ li {
 }
 
 .site-link {
+    display: block;
     color: #FFF;
     font-family: "Manrope";
     font-size: 16px;
@@ -72,6 +81,7 @@ li {
     font-weight: 500;
     line-height: 23px;
     opacity: 0.3;
+    position: relative;
 }
 
 .site-nav-lan {
@@ -93,24 +103,29 @@ li {
     font-weight: 500;
     line-height: 23px;
     opacity: 0.3;
+    position: relative;
 }
 
 .site-lan:active {
     color: var(--white);
     opacity: 1;
 }
+
 .hero__container {
     position: relative;
 }
+
 .hero__btn {
     position: absolute;
     bottom: -21px;
 }
+
 .site-hero__btn {
     position: absolute;
     left: 187px;
     bottom: -21px;
 }
+
 .site-header__title {
     color: var(--white);
     font-family: "Manrope";
@@ -168,6 +183,12 @@ li {
     line-height: 44px;
 }
 
+.site-header-veb {
+    background: var(--dark);
+    width: 100%;
+    height: 100px;
+}
+
 /* MAIN START */
 .main {
     background: var(--dark);
@@ -188,30 +209,13 @@ li {
 }
 
 .sevices-card {
-    width: 1470px;
+    max-width: 1470px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     overflow-x: auto;
 }
-
-/* about us */
-.aboutus-img {
-    column-gap: 80px;
-}
-
-.gallery-img {
-    border-radius: 21px;
-    border: 1px solid --white;
-    background: url(<path-to-image>), lightgray -218px -226.383px / 117.581% 220.738% no-repeat;
-    margin-bottom: 60px;
-}
-
-.aboutus-section {
-    margin-bottom: 30px;
-}
-
-/* about us */
 
 .card {
     width: 406px;
@@ -223,7 +227,7 @@ li {
 
 .card:hover {
     background-image: radial-gradient(circle, pink, indigo, yellow, #800080, #0000ff,
-     #00ffff, #00ff00);
+            #00ffff, #00ff00);
 }
 
 .card-title {
@@ -264,19 +268,75 @@ li {
 
 .portfolio-section {
     background-color: var(--dark);
-    background: url(../img/Rectangle\ \(1\).png) no-repeat center center/ cover;
+    background: url(../img/bg.png) no-repeat center center/ cover;
 }
 
 .portifolio-d-flex {
     padding-top: 100px;
 }
 
-.portifolio-img {
+.portfolio-card {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
     flex-wrap: wrap;
+    gap: 5px;
+    padding-bottom: 100px;
 }
 
-.portfolio-card {
-    padding-bottom: 100px;
+.portifolio-image {
+    width: 617px;
+    height: 326px;
+    position: relative;
+}
+
+.portifolio-img {
+    z-index: -1;
+}
+
+.portfolio-content {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 21px;
+    border: 1px solid var(--white);
+    background: linear-gradient(0deg, rgba(124, 124, 124, 0.20) 0%, rgba(124, 124, 124, 0.20) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: .5s;
+}
+
+.portfolio-content:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.portfolio-desc {
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 112px;
+    border-radius: 66px;
+    background: rgba(196, 196, 196, 0.10);
+    box-shadow: -21.667px 21.667px 21.667px 0px rgba(255, 255, 255, 0.10) inset, 21.667px -21.667px 21.667px 0px rgba(149, 149, 149, 0.10) inset;
+    backdrop-filter: blur(21.66666603088379px);
+}
+
+.portfolio-dec__text {
+    max-width: 256px;
+    width: 100%;
+    color: var(--white);
+    font-family: "Manrope";
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .portifolio-info {

@@ -1,4 +1,8 @@
-
+:root {
+    --dark: #1C1C1E;
+    --white: #FFF;
+    --blue: #0040DD;
+}
 
 /* descktop */
 @media (max-width: 1440px) {}
@@ -54,6 +58,67 @@
         width: 100%;
         margin: auto;
     }
+    .nav-menu {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu__line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        display: block;
+        position: relative;
+        transition: .3s;
+    }
+    .nav-menu__line::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: -10px;
+        position: relative;
+        transition: .4s;
+    }
+    .nav-menu__line::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        top: 10px;
+        transition: .4s;
+    }
+
+    .nav-menu:hover .nav-menu__line::before{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .nav-menu:hover .nav-menu__line::after{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    .nav-menu:hover .nav-menu__line {
+        background-color: transparent;
+    }
+    .nav {
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--dark);
+        width: 100%;
+        height: 100vh;
+        z-index: -99;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0);
+        transition: .5s;
+    }
     .site-hero__text {
         width: 335px;
         font-size: 16px;
@@ -65,9 +130,20 @@
         font-size: 35px;
         font-weight: 700;
     }
-    .portifolio-img {
+    .portifolio-image {
         width: 343px;
         height: 182px;
+    }
+    .portfolio-desc {
+        padding: 5px 10px;
+        column-gap: 60px;
+        border-radius: 21px; 
+    }
+    .portfolio-dec__text {
+        max-width: 200px;
+        width: 100%;
+        font-size: 10px;
+        font-weight: 400;
     }
     .info-text {
         width: 349px;
